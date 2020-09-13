@@ -24,14 +24,18 @@
 
 
 公共配置：
+
 1. ThreadLocal
     com.gray.common.threadLocal.PassParameters
+    
 2. AOP拦截请求头
     com.gray.common.aop.ApiRequestAspect
+
 3. 实现自己的GrayMetadataRule
-GrayMetadataRule 将会从Euraka中获取元服务器的信息，并根据这个信息选择服务器
+    GrayMetadataRule 将会从Euraka中获取元服务器的信息，并根据这个信息选择服务器
     com.gray.common.core.GrayMetadataRule
-4. feign 拦截器,将天后热adlocal中的内容读出并写入请求头,通过这种方式传递版本信息
+    
+4. feign 拦截器,将threadlocal中的内容读出并写入请求头,通过这种方式传递版本信息
     com.gray.common.core.DefaultFeignConfig
 
 ## ZUUL
