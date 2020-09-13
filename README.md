@@ -57,5 +57,5 @@ app-consumer,通过切面获取到版本信息,并将版本信息放入threadloc
     #灰度版本号
     eureka.instance.metadata-map.version=3
     
-    调用http://localhost:8888/app-consumer/get即可实现zuul到app-consumer的灰度
-    调用http://localhost:8888/app-consumer/hello-provider即可实现zuul到app-consumer再到app-provider的灰度
+    调用http://localhost:8888/app-consumer/get?v=2即可实现zuul到app-consumer的灰度
+    调用http://localhost:8888/app-consumer/hello-provider?v=2即可实现zuul到app-consumer再到app-provider的灰度
