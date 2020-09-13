@@ -39,10 +39,10 @@ GrayMetadataRule 将会从Euraka中获取元服务器的信息，并根据这�
     com.gh.zuul.filter.GrayPreFilter
     com.gh.zuul.filter.GrayPostFilter
 
-##APP-CONSUMER配置
+## APP-CONSUMER配置
 app-consumer,通过切面获取到版本信息,并将版本信息放入threadlocal中,通过feign再封装到http头,传递到下一层
 
-##快速开始
+## 快速开始
     把项目中的eureka-server、zuul启动，
     并启动多实例的app-consumer、app-provider同时给给不同实例配置不同的端口号、版本，如：
     server.port=8802
