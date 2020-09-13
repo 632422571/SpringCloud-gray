@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.gray.common.core.GrayMetadataRule\
+  ,com.gray.common.core.DefaultFeignConfig\
+  ,com.gray.common.aop.ApiRequestAspect
